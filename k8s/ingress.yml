@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myingress
+  namespace: k8s-1
+spec:
+  rules:
+  - host: micro.hanumanthreddy.xyz
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: index-svc
+            port: 
+              number: 80
