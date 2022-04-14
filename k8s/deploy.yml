@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: index
-        image: <Image>
+        image: 861531569385.dkr.ecr.us-west-1.amazonaws.com/sparkjava
         resources:
           limits:
             memory: "128Mi"
